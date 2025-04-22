@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/home_works.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/main_figures.css">
+
 </head>
 <body>
 
@@ -26,7 +29,10 @@
                         <a href="../pages/lessons.html">Lessons</a>
                     </li>
                     <li class="menu_link">
-                        <a href="https://t.me/NurDinBuy16" target="_blank">Send message</a>
+                        <a href="../pages/main_figures.html">Main Figures</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="https://t.me/aiten1r" target="_blank">Send message</a>
                     </li>
                 </ul>
                 <button class="btn" id="btn-get">Click me!</button>
@@ -36,7 +42,7 @@
 
     <div class="gmail_block">
         <div class="container">
-            <h3>Home work 1 (part 1)</h3>
+            <h3>Homework 1 (part 1)</h3>
             <div class="inner_gmail_block">
                 <div class="form_gmail">
                     <label for="gmail_input"></label>
@@ -50,10 +56,10 @@
 
     <div class="move_block">
         <div class="container">
-            <h3>Home work 1 (part 2)</h3>
+            <h3>Homework 1 (part 2)</h3>
             <div class="inner_move_block">
                 <div class="parent_block">
-                    <div class="child_block"></div>
+                    <img src="/images/free-animated-icon-bus-15944711.png" class="child_block" />
                 </div>
             </div>
         </div>
@@ -61,12 +67,21 @@
 
     <div class="stopwatch">
         <div class="container">
-            <h3>Home work 2 </h3>
+            <h3>Homework 2</h3>
+
+            <!-- Видео с игроком -->
+            <div class="video_block" style="margin-bottom: 20px;">
+                <video id="video" width="100%" controls src="/images/2025-04-12%2022.45.60.mp4"></video>
+            </div>
+
+            <!-- Счётчик -->
             <div class="time">
                 <div class="time_block">
                     <div class="interval" id="seconds">0</div>
                 </div>
             </div>
+
+            <!-- Кнопки -->
             <div class="time_buttons">
                 <button class="btn" id="start">Start</button>
                 <button class="btn" id="stop">Stop</button>
@@ -74,7 +89,6 @@
             </div>
         </div>
     </div>
-
     <div class="characters">
         <div class="container">
             <div class="characters-list">
@@ -87,7 +101,7 @@
         <div class="container">
             <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
                 <div class="inner_footer">
-                    <h2>Made by NurDinBuy</h2>
+                    <h2>Made by AITIDEV</h2>
                 </div>
             </a>
         </div>
@@ -100,8 +114,12 @@
             <form action="#">
                 <div class="modal_close">&times;</div>
                 <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <label>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                </label>
+                <label>
+                    <input required placeholder="Ваш номер телефона" name="phone" class="modal_input">
+                </label>
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>

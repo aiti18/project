@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/monster.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/main_figures.css">
 </head>
 <body>
 <div class="wrapper">
@@ -41,8 +43,12 @@
             <form action="#">
                 <div class="modal_close">&times;</div>
                 <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <label>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                </label>
+                <label>
+                    <input required placeholder="Ваш номер телефона" name="phone" class="modal_input">
+                </label>
                 <button class="btn btn_dark btn_min">Перезвонить мне</button>
             </form>
         </div>

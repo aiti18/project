@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Figures</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/home_works.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="/css/main_figures.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="inner_header">
+                    <a href="../index.html">
+                        <div class="logotype">
+                            <h2>Java<span>Script</span></h2>
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="../pages/home_works.html">Home Works</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/lessons.html">Lessons</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../pages/main_figures.html">Main Figures</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="t.me/aitenir_11" target="_blank">Send message</a>
+                        </li>
+                    </ul>
+                    <button class="btn" id="btn-get">Click me!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card_switcher">
+        <div class="container swiper-container">
+            <button id="prevBtn">←</button>
+            <div class="swiper-wrapper" id="cardsContainer">
+                <!-- карточки динамически -->
+            </div>
+            <button id="nextBtn">→</button>
+        </div>
+    </section>
+
+    <!-- Экран с биографией -->
+    <div id="bioScreen" class="bio-screen">
+        <div class="bio-background" id="bioBackground"></div>
+        <div class="bio-container">
+            <div class="bio-image" id="bioImageWrapper">
+                <!-- Сюда вставляется либо <img>, либо <video> -->
+            </div>
+            <div class="bio-text">
+                <h2 id="bioName" class="bio-age"></h2>
+                <p id="bioAge" class="bio-age"></p> <!-- Переместил bioAge сюда -->
+                <p id="bioBiography" class="bio-age"></p>
+                <p id="bioHistory" class="bio-age"></p>
+                <p id="bioNation" class="bio-age"></p>
+                <p id="bioStyle" class="bio-age"></p>
+                <p id="bioWeapon" class="bio-age"></p>
+                <p id="bioDescription" class="bio-age"></p>
+                <p id="bioInfo" class="bio-age"></p>
+            </div>
+        </div>
+        <button id="prevBioBtn" class="bio-nav-btn">←</button>
+        <button id="nextBioBtn" class="bio-nav-btn">→</button>
+        <button id="closeBioBtn" class="bio-close-btn">×</button>
+    </div>
+
+
+
+    <script src="/js/main.figures.js"></script>
+</body>
+</html>

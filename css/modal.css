@@ -1,0 +1,100 @@
+
+/* Общий контейнер модалки */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* затемнение фона */
+    display: none; /* изначально скрыта */
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* поверх других элементов */
+}
+
+/* Центрирование внутреннего блока */
+.modal_dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+/* Внутренности модального окна */
+.modal_content {
+    padding: 30px;
+    position: relative;
+}
+
+/* Кнопка закрытия */
+.modal_close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #d36a6a;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal_close:hover {
+    color: #9e0000;
+}
+
+/* Заголовок */
+.modal_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Поля ввода */
+.modal_input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.modal_input:focus {
+    border-color: #ffa500; /* оранжевая рамка при фокусе */
+    outline: none;
+}
+
+/* Кнопка отправки */
+.btn.btn_dark.btn_min {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn.btn_dark.btn_min:hover {
+    background-color: #e69500;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -8,7 +8,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 100;
 }
 
 .inner_header {
@@ -227,7 +227,7 @@
 
 /*-------BOTTLE-------*/
 
-.botlle {
+.bottle {
     background: black;
     padding: 100px 0;
 }
@@ -247,7 +247,6 @@
     border: 8px solid transparent;
     animation: animate 5s linear infinite;
     transform-origin: bottom center;
-    animation-play-state: run;
 }
 
 @keyframes animate {
